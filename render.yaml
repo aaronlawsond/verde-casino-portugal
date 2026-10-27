@@ -82,7 +82,7 @@ services:
   - type: web
     name: verde-casino-world
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf verde-casino-world.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-world.tar.gz && test -s public/images/social-card.webp && test -s public/en/app.html"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -105,7 +105,7 @@ services:
   - type: web
     name: world-verde-casino
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf world-verde-casino.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf world-verde-casino.tar.gz && test -s public/images/social-card.webp && test -s public/en/app.html"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
