@@ -15,3 +15,99 @@ services:
       - path: /*
         name: Content-Security-Policy
         value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  - type: web
+    name: verde-casino-sweden
+    runtime: static
+    buildCommand: "tar -xzf verde-casino-sweden.tar.gz"
+    staticPublishPath: public
+    autoDeployTrigger: "off"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  - type: web
+    name: verde-casino-estonia
+    runtime: static
+    buildCommand: "tar -xzf verde-casino-estonia.tar.gz"
+    staticPublishPath: public
+    autoDeployTrigger: "off"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  - type: web
+    name: verde-casino-canada
+    runtime: static
+    buildCommand: "tar -xzf verde-casino-canada.tar.gz"
+    staticPublishPath: public
+    autoDeployTrigger: "off"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  - type: web
+    name: verde-casino-croatia
+    runtime: static
+    buildCommand: "tar -xzf verde-casino-croatia.tar.gz"
+    staticPublishPath: public
+    autoDeployTrigger: "off"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  - type: web
+    name: verde-casino-world
+    runtime: static
+    buildCommand: "tar -xzf verde-casino-world.tar.gz"
+    staticPublishPath: public
+    autoDeployTrigger: "off"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  - type: web
+    name: world-verde-casino
+    runtime: static
+    buildCommand: "tar -xzf world-verde-casino.tar.gz"
+    staticPublishPath: public
+    autoDeployTrigger: "off"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
