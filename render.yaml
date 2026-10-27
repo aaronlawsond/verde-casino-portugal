@@ -2,7 +2,7 @@ services:
   - type: web
     name: verde-casino-portugal
     runtime: static
-    buildCommand: "tar -xzf site.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf site.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -18,7 +18,7 @@ services:
   - type: web
     name: verde-casino-sweden
     runtime: static
-    buildCommand: "tar -xzf verde-casino-sweden.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-sweden.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -34,7 +34,7 @@ services:
   - type: web
     name: verde-casino-estonia
     runtime: static
-    buildCommand: "tar -xzf verde-casino-estonia.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-estonia.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -50,7 +50,7 @@ services:
   - type: web
     name: verde-casino-canada
     runtime: static
-    buildCommand: "tar -xzf verde-casino-canada.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-canada.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -66,7 +66,7 @@ services:
   - type: web
     name: verde-casino-croatia
     runtime: static
-    buildCommand: "tar -xzf verde-casino-croatia.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-croatia.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -82,7 +82,7 @@ services:
   - type: web
     name: verde-casino-world
     runtime: static
-    buildCommand: "tar -xzf verde-casino-world.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-world.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -95,10 +95,17 @@ services:
       - path: /*
         name: Content-Security-Policy
         value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+    routes:
+      - type: redirect
+        source: /
+        destination: /en/
+      - type: redirect
+        source: /index.html
+        destination: /en/
   - type: web
     name: world-verde-casino
     runtime: static
-    buildCommand: "tar -xzf world-verde-casino.tar.gz"
+    buildCommand: "rm -rf public && tar -xzf world-verde-casino.tar.gz && test -s public/images/social-card.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -111,3 +118,10 @@ services:
       - path: /*
         name: Content-Security-Policy
         value: "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+    routes:
+      - type: redirect
+        source: /
+        destination: /en/
+      - type: redirect
+        source: /index.html
+        destination: /en/
