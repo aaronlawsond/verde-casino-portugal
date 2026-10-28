@@ -2,7 +2,7 @@ services:
   - type: web
     name: verde-casino-portugal
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf site.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf site.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -18,7 +18,7 @@ services:
   - type: web
     name: verde-casino-sweden
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf verde-casino-sweden.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-sweden.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -34,7 +34,7 @@ services:
   - type: web
     name: verde-casino-estonia
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf verde-casino-estonia.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-estonia.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -50,7 +50,7 @@ services:
   - type: web
     name: verde-casino-canada
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf verde-casino-canada.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-canada.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -66,7 +66,7 @@ services:
   - type: web
     name: verde-casino-croatia
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf verde-casino-croatia.tar.gz && test -s public/images/social-card.webp"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-croatia.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -82,7 +82,7 @@ services:
   - type: web
     name: verde-casino-world
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf verde-casino-world.tar.gz && test -s public/images/social-card.webp && test -s public/en/app.html"
+    buildCommand: "rm -rf public && tar -xzf verde-casino-world.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
@@ -105,7 +105,7 @@ services:
   - type: web
     name: world-verde-casino
     runtime: static
-    buildCommand: "rm -rf public && tar -xzf world-verde-casino.tar.gz && test -s public/images/social-card.webp && test -s public/en/app.html"
+    buildCommand: "rm -rf public && tar -xzf world-verde-casino.tar.gz && test -s public/images/hero-verde.webp && test -s public/images/social-verde.webp"
     staticPublishPath: public
     autoDeployTrigger: "off"
     headers:
